@@ -1,0 +1,40 @@
+{
+    "name": "bulgarian-media-freedom",
+    "version": "1.1.0",
+    "description": "Let users of Bulgarian media know of sponsorships",
+    "main": "contentScript.js",
+    "scripts": {
+        "compile": "npx tsc contentScript.ts",
+        "dist-firefox": "cp manifest.firefox.json manifest.json && npx web-ext build --overwrite-dest",
+        "dist-chrome": "cp manifest.chrome.json manifest.json && npx web-ext build --overwrite-dest",
+        "start": "npx web-ext run -u 4chan.org"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ydm/bulgarian-media-freedom.git"
+    },
+    "keywords": [
+        "bulgaria",
+        "bulgarian",
+        "extension",
+        "firefox",
+        "foreign",
+        "freedom",
+        "media",
+        "sponsored",
+        "sponsorship"
+    ],
+    "author": "Yordan Miladinov <jordanMiladinov@gmail.com>",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/ydm/bulgarian-media-freedom/issues"
+    },
+    "homepage": "https://github.com/ydm/bulgarian-media-freedom#readme",
+    "devDependencies": {
+        "eslint": "^8.25.0",
+        "@typescript-eslint/eslint-plugin": "^5.7.0",
+        "@typescript-eslint/parser": "^5.7.0",
+        "typescript": "^4.8.4",
+        "web-ext": "^7.2.0"
+    }
+}

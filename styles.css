@@ -1,0 +1,136 @@
+/* CSS Reset taken from https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+#bulgarian-media-freedom *,
+#bulgarian-media-freedom *::before,
+#bulgarian-media-freedom *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+#bulgarian-media-freedom h1,
+#bulgarian-media-freedom h2,
+#bulgarian-media-freedom h3,
+#bulgarian-media-freedom h4,
+#bulgarian-media-freedom p,
+#bulgarian-media-freedom figure,
+#bulgarian-media-freedom blockquote,
+#bulgarian-media-freedom dl,
+#bulgarian-media-freedom dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+#bulgarian-media-freedom ul[role="list"],
+#bulgarian-media-freedom ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+#bulgarian-media-freedom html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+#bulgarian-media-freedom a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+#bulgarian-media-freedom img,
+#bulgarian-media-freedom picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+#bulgarian-media-freedom input,
+#bulgarian-media-freedom button,
+#bulgarian-media-freedom textarea,
+#bulgarian-media-freedom select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    #bulgarian-media-freedom html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    #bulgarian-media-freedom *,
+    #bulgarian-media-freedom *::before,
+    #bulgarian-media-freedom *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Custom */
+
+#bulgarian-media-freedom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+
+    margin: 0;
+    padding: 12px 12px 32px 12px;
+    /* gap: 1em; */
+
+    background: #fff;
+    box-shadow: 0 0 7px rgb(0, 0, 0, 50%);
+
+    align-items: center;
+    z-index: 10000;
+}
+
+#bulgarian-media-freedom .title {
+    all: unset !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    color: #474747 !important;
+    display: block;
+    line-height: 1.6 !important;
+    width: 100%;
+}
+
+#bulgarian-media-freedom ul {
+    margin: 0;
+    padding: 8px 0 0 0;
+    list-style: inside;
+}
+
+#bulgarian-media-freedom ul li {
+    font-size: 14px;
+    margin: 0 0 0 12px;
+    padding: 0;
+}
+
+#bulgarian-media-freedom ul li a {
+  color: #474747 !important;
+    line-height: 20px;
+}
+
+#bulgarian-media-freedom ul li a b {
+    font-weight: bold;
+}
+
+#bulgarian-media-freedom button.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    /* width: 2em;
+       height: 2em; */
+    padding: 0.5em 1em;
+    margin: 0;
+    line-height: 12px;
+    font-size: 12px;
+    min-height: 12px;
+    font-family: sans-serif;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8) !important;
+}
