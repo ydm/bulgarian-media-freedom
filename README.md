@@ -27,7 +27,7 @@ follow their example.
 ### Extensions
 
 - [Firefox](https://addons.mozilla.org/addon/bulgarian-media-freedom/)
-  - Chrome: TBA!
+- Chrome: TBA!
 
 #### Roadmap and bugs:
 
